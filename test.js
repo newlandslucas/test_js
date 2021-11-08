@@ -2,6 +2,7 @@
 const sum = require('./sum');
 const subtract = require('./subtract');
 const cloneArray = require('./cloneArray');
+const factory = require('./factory');
 
 
 // sum test
@@ -25,4 +26,10 @@ test('properly clones array', () => {
 test('properly subtract two numbers', () => {
     expect(subtract(5, 4)).toBe(1)
 
+})
+
+// factory
+
+test('properly make the construction of a full name', () => {
+    expect(factory("Lucas", "Newlands")).toBe("Lucas Newlands")
 })
